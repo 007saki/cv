@@ -151,7 +151,7 @@ export default function Home() {
 
         <section className="mb-10 bg-white/90 rounded-2xl shadow-lg p-6 sm:p-8">
           <h2 className="text-2xl font-bold mb-3 text-blue-900">
-            <span className="font-semibold rounded-sm p-1">2014</span> : Fexco / Western Union
+            <span className="font-semibold rounded-sm p-1">2015</span> : Fexco / Western Union
           </h2>
           <p className="text-gray-700 mb-4">
             As an IT attachee at Fexco, an agent for Western Union, I was
