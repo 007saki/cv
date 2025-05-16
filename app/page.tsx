@@ -196,6 +196,23 @@ export default function Home() {
             />
           </div>
         </section>
+
+        <section className="mb-10 bg-white/90 rounded-2xl shadow-lg p-6 sm:p-8">
+          <h2 className="text-2xl font-bold mb-3 text-blue-900">
+            Voluntary Work & Community Involvement
+          </h2>
+          <p className="text-gray-700 mb-4">
+            I am passionate about giving back to my community and have participated in various voluntary roles. Below you can find my official appointment letter for voluntary service.
+          </p>
+          <a
+            href="/appointment-letter.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block px-4 py-2 bg-green-600 text-white rounded-lg font-semibold shadow hover:bg-green-700 transition"
+          >
+            View Appointment Letter (PDF)
+          </a>
+        </section>
       </div>
       <style jsx global>{`
         @keyframes gradient-move {
