@@ -1,7 +1,52 @@
-
 'use client';
 
-import React from "react";
+import React, { useState, useEffect } from "react";
+
+const gridImages = [
+  "https://sakiasi-site.s3.ap-southeast-2.amazonaws.com/Grid+Alarm+Installation+2.jpg",
+  "https://sakiasi-site.s3.ap-southeast-2.amazonaws.com/Grid+Alarm+Installation+3.jpg",
+  "https://sakiasi-site.s3.ap-southeast-2.amazonaws.com/Grid+Alarm+Installation+4.jpg",
+  "https://sakiasi-site.s3.ap-southeast-2.amazonaws.com/Grid+Alarm+Installation.jpg",
+  "https://sakiasi-site.s3.ap-southeast-2.amazonaws.com/Grid+Switch+and+Ethernet.jpg",
+];
+
+function GridSlideshow() {
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(
+      () => setIndex((i) => (i + 1) % gridImages.length),
+      2500
+    );
+    return () => clearInterval(timer);
+  }, []);
+
+  return (
+    <div className="relative w-full h-48 sm:h-64 flex items-center justify-center">
+      {gridImages.map((src, i) => (
+        <img
+          key={src}
+          src={src}
+          alt={`Grid Electronics ${i + 1}`}
+          className={`absolute rounded-lg shadow object-cover w-full h-48 sm:h-64 transition-opacity duration-700 ${
+            i === index ? "opacity-100 z-10" : "opacity-0 z-0"
+          }`}
+          style={{ objectPosition: "center" }}
+        />
+      ))}
+      <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-2">
+        {gridImages.map((_, i) => (
+          <span
+            key={i}
+            className={`block w-2 h-2 rounded-full ${
+              i === index ? "bg-blue-600" : "bg-gray-300"
+            }`}
+          />
+        ))}
+      </div>
+    </div>
+  );
+}
 
 export default function Home() {
   return (
@@ -69,33 +114,7 @@ export default function Home() {
             deliver reliable solutions for clients, and gained hands-on experience
             with the latest security and networking technologies.
           </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <img
-              src="https://sakiasi-site.s3.ap-southeast-2.amazonaws.com/Grid+Alarm+Installation+2.jpg"
-              alt="Grid Alarm Installation 2"
-              className="rounded-lg shadow object-cover w-full h-48"
-            />
-            <img
-              src="https://sakiasi-site.s3.ap-southeast-2.amazonaws.com/Grid+Alarm+Installation+3.jpg"
-              alt="Grid Alarm Installation 3"
-              className="rounded-lg shadow object-cover w-full h-48"
-            />
-            <img
-              src="https://sakiasi-site.s3.ap-southeast-2.amazonaws.com/Grid+Alarm+Installation+4.jpg"
-              alt="Grid Alarm Installation 4"
-              className="rounded-lg shadow object-cover w-full h-48"
-            />
-            <img
-              src="https://sakiasi-site.s3.ap-southeast-2.amazonaws.com/Grid+Alarm+Installation.jpg"
-              alt="Grid Alarm Installation"
-              className="rounded-lg shadow object-cover w-full h-48"
-            />
-            <img
-              src="https://sakiasi-site.s3.ap-southeast-2.amazonaws.com/Grid+Switch+and+Ethernet.jpg"
-              alt="Grid Switch and Ethernet"
-              className="rounded-lg shadow object-cover w-full h-48"
-            />
-          </div>
+          <GridSlideshow />
         </section>
 
         <section className="mb-10 bg-white/90 rounded-2xl shadow-lg p-6 sm:p-8">
