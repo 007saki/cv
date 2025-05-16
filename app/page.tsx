@@ -104,7 +104,7 @@ export default function Home() {
 
         <section className="mb-10 bg-white/90 rounded-2xl shadow-lg p-6 sm:p-8">
           <h2 className="text-2xl font-bold mb-3 text-blue-900">
-            <span className="font-semibold bg-red-400 rounded-sm p-1">2024</span> : Grid Electronics Security Services
+            <span className="font-semibol rounded-sm p-1">2024</span> : Grid Electronics Security Services
           </h2>
           <p className="text-gray-700 mb-4">
             At Grid Electronics Security Services, I was responsible for a wide
@@ -120,7 +120,7 @@ export default function Home() {
 
         <section className="mb-10 bg-white/90 rounded-2xl shadow-lg p-6 sm:p-8">
           <h2 className="text-2xl font-bold mb-3 text-blue-900">
-            <span className="font-semibold bg-red-400 rounded-sm p-1">2016 - 2023</span> : Fiji Police Force
+            <span className="font-semibol rounded-sm p-1">2016 - 2023</span> : Fiji Police Force
           </h2>
           <p className="text-gray-700 mb-4">
             I served as a System Administrator in the Fiji Police Force for 7
@@ -151,7 +151,7 @@ export default function Home() {
 
         <section className="mb-10 bg-white/90 rounded-2xl shadow-lg p-6 sm:p-8">
           <h2 className="text-2xl font-bold mb-3 text-blue-900">
-            <span className="font-semibold bg-red-400 rounded-sm p-1">2014</span> : Fexco / Western Union
+            <span className="font-semibold rounded-sm p-1">2014</span> : Fexco / Western Union
           </h2>
           <p className="text-gray-700 mb-4">
             As an IT attachee at Fexco, an agent for Western Union, I was
@@ -170,7 +170,7 @@ export default function Home() {
 
         <section className="mb-10 bg-white/90 rounded-2xl shadow-lg p-6 sm:p-8">
           <h2 className="text-2xl font-bold mb-3 text-blue-900">
-            <span className="font-semibold bg-red-400 rounded-sm p-1">2014</span> : AusAID Project
+            <span className="font-semibol rounded-sm p-1">2014</span> : AusAID Project
           </h2>
           <p className="text-gray-700 mb-4">
             During my time with the AusAID project in 2013, I was responsible
@@ -200,7 +200,7 @@ export default function Home() {
 
         <section className="mb-10 bg-white/90 rounded-2xl shadow-lg p-6 sm:p-8">
           <h2 className="text-2xl font-bold mb-3 text-blue-900">
-           <span className="font-semibold bg-red-400 rounded-sm p-1">2013</span> : Voluntary Work & Community Involvement 
+           <span className="font-semibold rounded-sm p-1">2013</span> : Voluntary Work & Community Involvement
           </h2>
           <p className="text-gray-700 mb-4">
             In 2014, I was appointed as a volunteer at the Ministry of Rural and Disaster Risk Management Office. My role involved assisting in the preparation of government roadshows, organizing and sorting critical data, and maintaining communication with partners and stakeholders. I worked closely with teams to coordinate logistics, support outreach programs, and ensure the smooth delivery of services to rural communities. This experience deepened my commitment to community service, strengthened my organizational and communication skills, and gave me a unique perspective on the importance of resilience and collaboration in serving the people of Fiji.
@@ -215,7 +215,7 @@ export default function Home() {
           </a>
         </section>
       </div>
-      <Footer/>
+      <Footer />
       <style jsx global>{`
         @keyframes gradient-move {
           0%, 100% { background-position: 0% 50%; }
