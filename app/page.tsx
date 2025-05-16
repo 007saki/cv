@@ -62,7 +62,7 @@ export default function Home() {
             Sakiasi Baleiwai Komaidrakulu
           </h1>
           <p className="text-lg sm:text-xl text-blue-700 font-medium mb-2 animate-fadein">
-            Self-taught Developer (2025)
+            <span className="font-semibold bg-green-400 rounded-sm p-1">2025</span>  Self-taught Developer
           </p>
           <p className="text-base sm:text-lg text-gray-700 mb-2 animate-fadein delay-200">
             I am a passionate and self-motivated developer specializing in Python and JavaScript. My focus is on building responsive, modern web applications that are both visually appealing and highly functional. I enjoy learning new technologies and continuously improving my skills to deliver the best solutions.
@@ -103,7 +103,7 @@ export default function Home() {
 
         <section className="mb-10 bg-white/90 rounded-2xl shadow-lg p-6 sm:p-8">
           <h2 className="text-2xl font-bold mb-3 text-blue-900">
-            Grid Electronics Security Services (2024)
+            <span className="font-semibold bg-red-400 rounded-sm p-1">2024</span> : Grid Electronics Security Services
           </h2>
           <p className="text-gray-700 mb-4">
             At Grid Electronics Security Services, I was responsible for a wide
@@ -119,7 +119,7 @@ export default function Home() {
 
         <section className="mb-10 bg-white/90 rounded-2xl shadow-lg p-6 sm:p-8">
           <h2 className="text-2xl font-bold mb-3 text-blue-900">
-            Fiji Police Force (2016 - 2023)
+            <span className="font-semibold bg-red-400 rounded-sm p-1">2016 - 2023</span> : Fiji Police Force
           </h2>
           <p className="text-gray-700 mb-4">
             I served as a System Administrator in the Fiji Police Force for 7
@@ -150,7 +150,7 @@ export default function Home() {
 
         <section className="mb-10 bg-white/90 rounded-2xl shadow-lg p-6 sm:p-8">
           <h2 className="text-2xl font-bold mb-3 text-blue-900">
-            Fexco / Western Union (2014)
+            <span className="font-semibold bg-red-400 rounded-sm p-1">2014</span> : Fexco / Western Union
           </h2>
           <p className="text-gray-700 mb-4">
             As an IT attachee at Fexco, an agent for Western Union, I was
@@ -169,7 +169,7 @@ export default function Home() {
 
         <section className="mb-10 bg-white/90 rounded-2xl shadow-lg p-6 sm:p-8">
           <h2 className="text-2xl font-bold mb-3 text-blue-900">
-            AusAID Project (2013)
+            <span className="font-semibold bg-red-400 rounded-sm p-1">2014</span> : AusAID Project
           </h2>
           <p className="text-gray-700 mb-4">
             During my time with the AusAID project in 2013, I was responsible
@@ -199,10 +199,10 @@ export default function Home() {
 
         <section className="mb-10 bg-white/90 rounded-2xl shadow-lg p-6 sm:p-8">
           <h2 className="text-2xl font-bold mb-3 text-blue-900">
-            Voluntary Work & Community Involvement
+           <span className="font-semibold bg-red-400 rounded-sm p-1">2013</span> : Voluntary Work & Community Involvement 
           </h2>
           <p className="text-gray-700 mb-4">
-            I am passionate about giving back to my community and have participated in various voluntary roles. Below you can find my official appointment letter for voluntary service.
+            In 2014, I was appointed as a volunteer at the Ministry of Rural and Disaster Risk Management Office. My role involved assisting in the preparation of government roadshows, organizing and sorting critical data, and maintaining communication with partners and stakeholders. I worked closely with teams to coordinate logistics, support outreach programs, and ensure the smooth delivery of services to rural communities. This experience deepened my commitment to community service, strengthened my organizational and communication skills, and gave me a unique perspective on the importance of resilience and collaboration in serving the people of Fiji.
           </p>
           <a
             href="/appointment-letter.pdf"
@@ -214,6 +214,35 @@ export default function Home() {
           </a>
         </section>
       </div>
+      <footer className="w-full text-center py-6 mt-8 bg-white/70 rounded-t-2xl shadow-inner">
+        <p className="text-gray-700 text-sm">
+          &copy; {new Date().getFullYear()} Sakiasi Baleiwai Komaidrakulu. All rights reserved.
+        </p>
+        <div className="flex justify-center gap-4 mt-2">
+          <a
+            href="mailto:saki.baleiwai.komai@gmail.com"
+            className="text-blue-600 hover:text-blue-800 underline transition font-semibold"
+          >
+            Email
+          </a>
+          <a
+            href="https://github.com/007saki"
+            className="text-blue-600 hover:text-blue-800 underline transition font-semibold"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </a>
+          <a
+            href="https://www.linkedin.com/in/sakiasi-komaidrakulu-915b2215a?original_referer="
+            className="text-blue-600 hover:text-blue-800 underline transition font-semibold"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+          </a>
+        </div>
+      </footer>
       <style jsx global>{`
         @keyframes gradient-move {
           0%, 100% { background-position: 0% 50%; }
