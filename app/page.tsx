@@ -1,3 +1,6 @@
+
+'use client';
+
 import React from "react";
 
 export default function Home() {
@@ -10,28 +13,24 @@ export default function Home() {
             alt="Profile image"
             className="rounded-full shadow-lg mx-auto mb-6 border-4 border-white w-32 h-32 sm:w-40 sm:h-40 object-cover"
           />
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900 mb-2 tracking-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900 mb-2 tracking-tight animate-gradient bg-gradient-to-r from-blue-700 via-purple-500 to-blue-700 bg-clip-text text-transparent">
             Sakiasi Baleiwai Komaidrakulu
           </h1>
-          <p className="text-lg sm:text-xl text-blue-700 font-medium mb-2">
+          <p className="text-lg sm:text-xl text-blue-700 font-medium mb-2 animate-fadein">
             Self-taught Developer (2025)
           </p>
-          <p className="text-base sm:text-lg text-gray-700 mb-2">
-            I am a passionate and self-motivated developer specializing in Python
-            and JavaScript. My focus is on building responsive, modern web
-            applications that are both visually appealing and highly functional. I
-            enjoy learning new technologies and continuously improving my skills
-            to deliver the best solutions.
+          <p className="text-base sm:text-lg text-gray-700 mb-2 animate-fadein delay-200">
+            I am a passionate and self-motivated developer specializing in Python and JavaScript. My focus is on building responsive, modern web applications that are both visually appealing and highly functional. I enjoy learning new technologies and continuously improving my skills to deliver the best solutions.
           </p>
           <a
             href="https://github.com/007saki"
-            className="inline-block mt-2 px-4 py-2 bg-blue-600 text-white rounded-lg font-semibold shadow hover:bg-blue-700 transition"
+            className="inline-block mt-2 px-4 py-2 bg-blue-600 text-white rounded-lg font-semibold shadow hover:bg-blue-700 transition animate-fadein delay-300"
             target="_blank"
             rel="noopener noreferrer"
           >
             View My Projects
           </a>
-          <div className="flex flex-wrap justify-center gap-4 mt-4 text-base">
+          <div className="flex flex-wrap justify-center gap-4 mt-4 text-base animate-fadein delay-500">
             <a
               href="mailto:saki.baleiwai.komai@gmail.com"
               className="text-blue-600 hover:text-blue-800 underline transition font-semibold"
@@ -47,7 +46,7 @@ export default function Home() {
               Website
             </a>
             <a
-              href="https://www.linkedin.com/in/sakiasi"
+              href="https://www.linkedin.com/in/sakiasi-komaidrakulu-915b2215a?original_referer="
               className="text-blue-600 hover:text-blue-800 underline transition font-semibold"
               target="_blank"
               rel="noopener noreferrer"
@@ -179,6 +178,26 @@ export default function Home() {
           </div>
         </section>
       </div>
+      <style jsx global>{`
+        @keyframes gradient-move {
+          0%, 100% { background-position: 0% 50%; }
+          50% { background-position: 100% 50%; }
+        }
+        .animate-gradient {
+          background-size: 200% 200%;
+          animation: gradient-move 3s ease-in-out infinite;
+        }
+        @keyframes fadein {
+          from { opacity: 0; transform: translateY(20px);}
+          to { opacity: 1; transform: translateY(0);}
+        }
+        .animate-fadein {
+          animation: fadein 1s ease forwards;
+        }
+        .delay-200 { animation-delay: 0.2s; }
+        .delay-300 { animation-delay: 0.3s; }
+        .delay-500 { animation-delay: 0.5s; }
+      `}</style>
     </main>
   );
 }
