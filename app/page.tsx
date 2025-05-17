@@ -205,14 +205,7 @@ export default function Home() {
           <p className="text-gray-700 mb-4">
             In 2014, I was appointed as a volunteer at the Ministry of Rural and Disaster Risk Management Office. My role involved assisting in the preparation of government roadshows, organizing and sorting critical data, and maintaining communication with partners and stakeholders. I worked closely with teams to coordinate logistics, support outreach programs, and ensure the smooth delivery of services to rural communities. This experience deepened my commitment to community service, strengthened my organizational and communication skills, and gave me a unique perspective on the importance of resilience and collaboration in serving the people of Fiji.
           </p>
-          <a
-            href="/appointment-letter.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block px-4 py-2 bg-green-600 text-white rounded-lg font-semibold shadow hover:bg-green-700 transition"
-          >
-            View Appointment Letter (PDF)
-          </a>
+          
         </section>
       </div>
       <Footer />
