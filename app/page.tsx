@@ -207,6 +207,32 @@ export default function Home() {
           </p>
           
         </section>
+
+        <section className="mb-10 bg-white/90 rounded-2xl shadow-lg p-6 sm:p-8">
+          <h2 className="text-2xl font-bold mb-3 text-blue-900 italic">
+            2017 : Best Turn-Out Officer Award
+          </h2>
+          <p className="text-gray-700 mb-4">
+            In 2017, I was honored to receive the <span className="font-semibold">Best Turn-Out Officer</span> certificate, issued by the Director of Forensic Science Services. This recognition reflects my dedication to professionalism, discipline, and excellence in my role within the Fiji Police Force.
+          </p>
+          <div className="flex justify-center">
+            <a
+              href="https://sakiasi-site.s3.ap-southeast-2.amazonaws.com/Best+Turn-Out+Officer+Certificate.jpg"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block"
+            >
+              <img
+                src="https://sakiasi-site.s3.ap-southeast-2.amazonaws.com/Best+Turn-Out+Officer+Certificate.jpg"
+                alt="Best Turn-Out Officer Certificate 2017"
+                className="rounded-lg shadow object-contain w-full max-w-xs border"
+              />
+              <span className="block text-center text-blue-700 mt-2 underline">
+                View Certificate
+              </span>
+            </a>
+          </div>
+        </section>
       </div>
       <Footer />
       <style jsx global>{`
